@@ -1,0 +1,13 @@
+use git 
+git remote add origin https://github.com/niyoufa/nyf.git
+git push -u origin master
+git pull -u origin master
+
+
+初始化一个git
+echo "# yanqing" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/niyoufa/yanqing.git
+git push -u origin master

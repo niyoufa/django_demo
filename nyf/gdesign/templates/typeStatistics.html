@@ -1,0 +1,60 @@
+{% extends "gdesign_frame.html" %}   
+{% block script_block %}
+    <script>
+    var chart;
+    	// Build the chart
+        $('#typeStatistics').highcharts({
+            chart: {
+               type: 'pie',
+                options3d: {
+                    enabled: true,
+                    alpha: 45,
+                    beta: 0
+                }
+            },
+            title: {
+                text: '事故类型图'
+            },
+             credits: {
+                 enabled: false
+       },
+            tooltip: {
+        	    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                          format: '{point.name}'
+                    },
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: '比例',
+                data: [
+                    ['高压管线腐蚀报废',   4],
+                    ['爆炸', 11],
+                    {
+                        name: '燃烧',
+                        y: 2,
+                        sliced: true,
+                        selected: true
+                    },
+                    ['泄漏',  10],
+                    ['储气井管套冲出', 8],
+                    ['售气机部件报废',   54]
+                    ['压缩机震动,冰堵,损坏等',11]
+                ]
+            }]
+        });
+
+    </script>
+{% endblock %}
+{% block content_block %}
+         <div class="span8 left" id="typeStatistics">
+         </div>
+{% endblock %}
+           

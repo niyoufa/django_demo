@@ -1,0 +1,60 @@
+{% extends "gdesign_frame.html"%}
+{% block script_block %}
+    <script>
+        $('#lossStatistics').highcharts({
+            chart: {
+                type: 'pie',
+                options3d: {
+                    enabled: true,
+                    alpha: 45,
+                    beta: 0
+                }
+            },
+            title: {
+                text: '事故损失分布图'
+            },
+             credits: {
+                 enabled: false
+       },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    depth: 35,
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}'
+                    }
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: '比例',
+                data: [
+                    ['车用气瓶爆炸',   44.6],
+                    ['压缩机燃烧',    12.3],
+                    {
+                        name: '售气机爆炸',
+                        y: 11.2,
+                        sliced: true,
+                        selected: true
+                    },
+                    ['站用气瓶爆炸',    9.5],
+                    ['压缩机震动报废,冰堵', 8.6],
+                    ['售气机相关部件损坏报废',   6.7],
+                    ['储气井泄漏', 5.1],
+                    ['储气井管套冲出,窜动',   1.1],
+                    ['高压管线腐蚀报废更换',   0.9]
+                ]
+            }]
+        });
+  
+    </script>
+{% endblock %}
+{% block content_block %}
+                     <div class="span8 left" id="lossStatistics">
+                     </div>
+{% endblock %}

@@ -1,0 +1,367 @@
+{% extends "gdesign_frame.html"%}
+
+{% block script_block %}
+<script type="text/javascript" src="/static/js/chooseDash.js"></script>
+<script type="text/javascript" src="/static/js/variable.js"></script>
+<script>
+
+//管道泄漏危险系数动态模拟
+                                            
+         activity_efficiency_tracking_dash =  function activity_efficiency_tracking_dash(title){
+                Highcharts.setOptions({                                                     
+                    global: {                                                               
+                        useUTC: false                                                       
+                    }                                                                       
+                });                                                                         
+                                                                                    
+                var chart;                                                            
+                $('#LeakageSimulationDash4').highcharts({                                                
+                    chart: {                                                                
+                        type: 'spline',                                                     
+                        animation: Highcharts.svg, // don't animate in old IE               
+                        marginRight: 10,                                                    
+                        events: {                                                           
+                            load: function() {                                              
+                                                                                            
+                                // set up the updating of the chart each second             
+                                var series = this.series[0];             
+                                setInterval(function() {     
+                                     var Q = 20*Math.random()/100
+                var A = 0.159874 + 0.960923 * Q -1.24869* Q * Q + 0.3728 * Q * Q*Q   
+                var B =  0.183894*Math.exp(-0.38484*Q)
+                                    var x = (new Date()).getTime();
+                                    var y = A*B;                                      
+                                    series.addPoint([x,y], true, true);                    
+                                }, 1000);                                                   
+                            }                                                               
+                        }                                                                   
+                    },                                                                      
+                    title: {                                                                
+                        text:"天然气泄漏危险系数动态模拟"                                    
+                    },    
+                    credits: {
+                                enabled: false
+                            },                                                                  
+                    xAxis: {                                                                
+                        type: 'datetime',                                                   
+                        tickPixelInterval: 100                                          
+                    },                                                                      
+                    yAxis: {                                                                
+                        title: {                                                            
+                            text: '危险系数'                                                
+                        },       
+                          lineWidth:1,
+            lineColor:'#C0D0E0',                                                           
+                        plotLines: [{                                                       
+                            value: 0,                                                       
+                            width: 1,                                                       
+                            color: '#808080'                                                
+                        }]                                                                  
+                    },                                                                      
+                    tooltip: {                                                              
+                        formatter: function() {                                             
+                                return '<b>'+ this.series.name +'</b><br/>'+                
+                                Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) +'<br/>'+
+                                Highcharts.numberFormat(this.y, 2)                  
+                        }                                                                   
+                    },                                                                      
+                    legend: {                                                               
+                        enabled: false                                                      
+                    },                                                                      
+                    exporting: {                                                            
+                        enabled: false                                                      
+                    },                                                                      
+                    series: [{                                                              
+                        name: '危险系数',                                 
+                        data: (function() {                                                 
+                            // generate an array of random data                             
+                            var data = [],                                                  
+                            time = (new Date()).getTime(),                              
+                            i;                       
+                            var  j = 5                                                                        
+                            for (i = -19; i <= 0; i++) {      
+                                         var Q = 20*Math.random()/100
+                var A = 0.159874 + 0.960923 * Q -1.24869* Q * Q + 0.3728 * Q * Q*Q   
+                var B =  0.183894*Math.exp(-0.38484*Q)
+                                data.push({                                                 
+                                    x: time + i * 1000,                                     
+                                    y: A*B                           
+                                });              
+                                j++                                           
+                            }                                                               
+                            return data;                                                    
+                        })()                                                                
+                    }]                                                                      
+                });                                                                                                     
+          }                                                                                             
+   
+activity_efficiency_tracking_dash();
+                                            
+function cal_syngx(A,B,s){
+    return A * Math.log(s) + B
+}
+
+//计算扩散速度
+function cal_single_rate_change(wing_rate,xiefang_rate){
+    Q = wing_rate/xiefang_rate
+    A = 0.159874 + 0.960923 * Q -1.24869* Q * Q + 0.3728 * Q * Q * Q
+    B = -0.478332 + 0.0418951 * Q + 0.153298 * Q * Q
+    data = []
+    data = [0,0,0,0,0,0,0,0,0,0,0,0]
+    for(var i =1;i <=12;i++){
+        data[i-1] = cal_syngx(A,B,i*100)
+    }
+    return data
+}
+
+//计算扩散浓度
+function cal_single_concentration_change(wing_rate,xiefang_rate){
+    Q = wing_rate/xiefang_rate
+    A =  -0.0161965+0.00543481*Q-0.00128631*Q*Q
+    B =  0.183894*Math.exp(-0.38484*Q)
+    data = []
+    data = [0,0,0,0,0,0,0,0,0,0,0,0]
+    for(var i =1;i <=12;i++){
+        data[i-1] = cal_syngx(A,B,i*100)
+    }
+    return data
+}
+
+//扩散速度图(单个因素影响)
+    $('#LeakageSimulationDash0').highcharts({
+        title: {
+            text: '气体扩散速度沿下风向变化图',
+            x: -20 //center
+        },
+        credits: {
+                 enabled: false
+       },
+        xAxis: {
+            categories: ['100', '200', '300', '400', '500', '600','700', '800', '900', '1000', '1100', '1200']
+        },
+        yAxis: {
+            title: {
+                text: '扩散速度m/s'
+            },
+            lineWidth:1,
+            lineColor:'#C0D0E0',
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080',
+            }],
+        },
+        tooltip: {
+            valueSuffix: 'm/s'
+        },
+        legend: {
+            align: "center",
+            verticalAlign: "bottom",
+            x: 0,
+            y: 0 ,
+        },
+        series: [{
+            name: '风速5 m/s',
+            data: cal_single_rate_change(5,110)
+        }, {
+            name: '风速10 m/s',
+            data: cal_single_rate_change(10,110)
+        }, {
+            name: '泄放速度 50 m/s',
+            data:cal_single_rate_change(10,50)
+        }, {
+            name: '泄放速度 100 m/s',
+            data:cal_single_rate_change(10,100)
+        }]
+    });
+//扩散浓度图
+    $('#LeakageSimulationDash1').highcharts({
+        title: {
+            text: '气体扩散浓度沿下风向的变化图',
+            x: -20 //center
+        },
+        credits: {
+                 enabled: false
+       },
+       
+        xAxis: {
+             categories: ['100', '200', '300', '400', '500', '600','700', '800', '900', '1000', '1100', '1200']
+        },
+        yAxis: {
+            title: {
+                text: '扩散浓度'
+            },
+              lineWidth:1,
+            lineColor:'#C0D0E0',
+            credits: {
+                enabled: false
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        legend: {
+            align: "center",
+            verticalAlign: "bottom",
+            x: 0,
+            y: 0 ,
+        },
+        series: [{
+            name: '风速5 m/s',
+            data: cal_single_concentration_change(5,110)
+        }, {
+            name: '风速10 m/s',
+            data: cal_single_concentration_change(10,110)
+        }, {
+            name: '泄放速度 50 m/s',
+            data:cal_single_concentration_change(12,50)
+        }, {
+            name: '泄放速度 100 m/s',
+            data: cal_single_concentration_change(12,100)
+        }]
+    });
+//扩散速度图(结合风速与泄放速度)
+    $('#LeakageSimulationDash2').highcharts({
+        title: {
+            text: '气体扩散速度比较图',
+            x: -20 //center
+        },
+        credits: {
+                 enabled: false
+       },
+      
+        xAxis: {
+             categories: ['100', '200', '300', '400', '500', '600','700', '800', '900', '1000', '1100', '1200']
+        },
+        yAxis: {
+            title: {
+                text: '扩散速度 m/s'
+            },
+               lineWidth:1,
+            lineColor:'#C0D0E0',
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: ''
+        },
+        legend: {
+            align: "center",
+            verticalAlign: "bottom",
+            x: 0,
+            y: 0 ,
+        },
+        series: [{
+            name: '风速5 m/s,泄放速度100 m/s',
+            data: cal_single_rate_change(5,100)
+        }, {
+            name: '风速10 m/s,泄放速度50 m/s',
+            data: cal_single_rate_change(10,50)
+        }]
+    });
+//扩散浓度图(结合风速和泄放速度)
+    $('#LeakageSimulationDash3').highcharts({
+        title: {
+            text: '气体扩散浓度比较图',
+            x: -20 //center
+        },
+        credits: {
+                 enabled: false
+       },
+      
+        xAxis: {
+             categories: ['100', '200', '300', '400', '500', '600','700', '800', '900', '1000', '1100', '1200']
+        },
+        yAxis: {
+            title: {
+                text: '扩散浓度'
+            },
+              lineWidth:1,
+            lineColor:'#C0D0E0',
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: ''
+        },
+        legend: {
+            align: "center",
+            verticalAlign: "bottom",
+            x: 0,
+            y: 0 ,
+        },
+         series: [{
+            name: '风速5 m/s,泄放速度100 m/s',
+            data:cal_single_concentration_change(5,100)
+        }, {
+            name: '风速10 m/s,泄放速度50 m/s',
+            data:cal_single_concentration_change(10,50)
+        }]
+    });
+
+
+</script>
+{% endblock %}
+
+{% block content_block %}
+                    <div id="shiftButton" class="left" style="margin-left:40px" >
+               <!--  <a href="javascript:shiftToDefined()">
+                <p id="shiftButtonText">切换到自定义模拟</p>
+                </a> -->
+                        <div id="definedsimulationCondition" style="display:none;">
+                                 <div class="btn-group">
+                        <button id="chooseDash" class="btn" contenteditable="false">选择模拟图</button>
+                        <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                        <ul class="dropdown-menu" contenteditable="false" onclick="chooseDash()">
+                            <li><a id="diffusionRate" >扩散速度图</a></li>
+                            <li><a id="ratelompare" href="#" >速度比较图</a></li>
+                            <li><a id="diffusionConcentration" href="#">扩散浓度图</a></li>
+                                <li><a id="ConcentrationCompare" href="#">浓度比较图</a></li> 
+                        </ul>
+                    </div>
+                        </div>
+                        <div id="definedCondition" style="display:none;">
+                                      <div style="margin-top:20px;">
+                        <div id="windSpeed" style="display:none;"><p>风速:</p><input type="text" ></input></div>
+                                            <div id="dischargeSpeed" style="display:none;"><p>泄放速度:</p><input type="text"></input></div><br/>
+                                            <input type="button" value="添加" onclick="simulationRequestData()"></input>
+                      </div>
+                        </div>
+                    </div>   
+                    <div id="definedSimulation" class="left" style="display:none;">
+                    <div class="span8">
+                        <div class="span8 margin_top" id="definedDash" style="margin-bottom:40px;">
+                            </div>
+                    </div>
+            </div>
+                    <div  class="left" style="margin-left:20px;">
+                      <div id="defaultSimulation">
+                        <div class="span8" id="LeakageSimulationDash0">
+                        </div>
+                       <div class="span8 margin_top" id="LeakageSimulationDash2" style="margin-top:20px;">
+                        </div>
+                        <div class="span8 margin_top" id="LeakageSimulationDash1" style="margin-top:20px;">
+                        </div>
+                        <div class="span8 margin_top" id="LeakageSimulationDash3" style="margin-top:20px;">
+                        </div>
+                                        <div class="span8">
+                        <div class="span8 margin_top" id="LeakageSimulationDash4" style="margin-bottom:40px;margin-top:20px;">
+                            </div>
+                    </div>
+                      </div>    
+                    </div>
+{% endblock %}
+
+
+
