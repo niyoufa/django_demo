@@ -165,12 +165,12 @@ def add_link(request):
 		
 #请求链接数据
 def request_link_data(request):
-	rsdic={}
-	rsdic['link_href']=[]
-	link_list=Links.objects.all()
-	for link in link_list:
-		rsdic['link_href'].append(link.url)
-	return HttpResponse(json.dumps(rsdic))
+        rsdic={}
+        rsdic['link_href']=[]
+        link_list=Links.objects.all()
+        for link in link_list:
+            rsdic['link_href'].append(link.url)
+        return HttpResponse(json.dumps(rsdic))
 
 #插入博客链接
 def insert_link_url(request):

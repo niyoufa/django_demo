@@ -17,7 +17,7 @@ urlpatterns = patterns('',
 	url('^%suploadFile/$'%DEMOSITE,uploadFilePage),
 	url('^%supload_file/$'%DEMOSITE,uploadFile),
 	url('^%slinkPage/$'%DEMOSITE,linkPage),
-        url('^%slinkPage/addlink/$'%DEMOSITE,add_link),
+        	url('^%slinkPage/addlink/$'%DEMOSITE,add_link),
 	#首页
 	url('^%sindex/$'%DEMOSITE,indexload),
 	url('^%sindex/requestlinkdata/$'%DEMOSITE,request_link_data),
