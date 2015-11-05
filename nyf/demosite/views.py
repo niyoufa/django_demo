@@ -113,7 +113,7 @@ def uploadFile(request):
                 if filename.endswith(".png") or filename.endswith(".jpg") :
                     file_type = 1
                     src=settings.BASE_DIR + '/demosite/static/images/'
-                    rsdic['info']=u'成功保存图片到'+src
+                    rsdic['info']=u'成功保存图片'
                 else :
                     rsdic={'ret':'1103','info':'请选择图片格式文件!'}
                     return render_to_response('%sdemosite_image.html'%DEMOSITE,{'message':rsdic['info']})
@@ -125,7 +125,7 @@ def uploadFile(request):
                 filename=request.FILES['file']._name
                 file_type = 0
                 src=settings.BASE_DIR + '/demosite/static/articles/'
-                rsdic['info']=u'成功保存文章到'+src
+                rsdic['info']=u'成功保存文章'
         file_title=File.objects.filter(title=filename)
         if len(file_title):
             if file_type == 1 :

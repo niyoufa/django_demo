@@ -122,5 +122,6 @@ TEMPLATE_DIRS = (
                 )
 
 # MEDIA_ROOT=BASE_DIR+"/nyf/static"
+# APPEND_SLASH=False
 
 

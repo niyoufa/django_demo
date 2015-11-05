@@ -1,0 +1,1000 @@
+ 1027  2015-09-03 09:44:10 nyf cd gflux-0.1.0/
+ 1028  2015-09-03 09:44:10 nyf ls -la 
+ 1029  2015-09-03 09:44:10 nyf cd ..
+ 1030  2015-09-03 09:44:10 nyf ls 
+ 1031  2015-09-03 09:44:10 nyf ls -la 
+ 1032  2015-09-03 09:44:10 nyf chmod -R 700 gflux-0.1.0 
+ 1033  2015-09-03 09:44:10 nyf sudo chmod -R 700 gflux-0.1.0 
+ 1034  2015-09-03 09:44:10 nyf ls -la 
+ 1035  2015-09-03 09:44:10 nyf cd gflux-0.1.0/
+ 1036  2015-09-03 09:44:10 nyf ls 
+ 1037  2015-09-03 09:44:10 nyf ls -la 
+ 1038  2015-09-03 09:44:10 nyf cd gflux-0.1.0/
+ 1039  2015-09-03 09:44:10 nyf sudo chown -R nyf:nyf gflux-0.1.0 
+ 1040  2015-09-03 09:44:10 nyf ls 
+ 1041  2015-09-03 09:44:10 nyf ls -la 
+ 1042  2015-09-03 09:44:10 nyf cd gflux-0.1.0/
+ 1043  2015-09-03 09:44:10 nyf ls -la 
+ 1044  2015-09-03 09:44:10 nyf cd gflux/
+ 1045  2015-09-03 09:44:10 nyf ls -la 
+ 1046  2015-09-03 09:44:10 nyf cd ..
+ 1047  2015-09-03 09:44:10 nyf cd .. 
+ 1048  2015-09-03 09:44:10 nyf ls 
+ 1049  2015-09-03 09:44:10 nyf cd gflux-0.1.0/
+ 1050  2015-09-03 09:44:10 nyf ls 
+ 1051  2015-09-03 09:44:10 nyf sudo python setup.py install 
+ 1052  2015-09-03 09:44:10 nyf cd ..
+ 1053  2015-09-03 09:44:10 nyf ls 
+ 1054  2015-09-03 09:44:10 nyf cd gflux-0.1.0/
+ 1055  2015-09-03 09:44:10 nyf ls 
+ 1056  2015-09-03 09:44:10 nyf ls dist/
+ 1057  2015-09-03 09:44:10 nyf unzip -l gflux-0.1.0-py2.7.egg
+ 1058  2015-09-03 09:44:10 nyf ls 
+ 1059  2015-09-03 09:44:10 nyf cd ..
+ 1060  2015-09-03 09:44:10 nyf rm -rf gflux-0.1.0
+ 1061  2015-09-03 09:44:10 nyf sudo rm -rf gflux-0.1.0 
+ 1062  2015-09-03 09:44:10 nyf ls 
+ 1063  2015-09-03 09:44:10 nyf cd ..
+ 1064  2015-09-03 09:44:10 nyf rm -rf gflux_egg 
+ 1065  2015-09-03 09:44:10 nyf sudo rm -rf gflux_egg 
+ 1066  2015-09-03 09:44:10 nyf ls 
+ 1067  2015-09-03 09:44:10 nyf tar -xvf gflux_egg.tar 
+ 1068  2015-09-03 09:44:10 nyf ls 
+ 1069  2015-09-03 09:44:10 nyf cd gflux_egg/
+ 1070  2015-09-03 09:44:10 nyf ls 
+ 1071  2015-09-03 09:44:10 nyf sudo python setup.py bdist_egg 
+ 1072  2015-09-03 09:44:10 nyf unzip -l dist/gflux-0.1.0-py2.7.egg 20
+ 1073  2015-09-03 09:44:10 nyf unzip -l dist/gflux-0.1.0-py2.7.egg 2000
+ 1074  2015-09-03 09:44:10 nyf unzip -l dist/gflux-0.1.0-py2.7.egg 
+ 1075  2015-09-03 09:44:10 nyf unzip --help
+ 1076  2015-09-03 09:44:10 nyf sudo python setup.py bdist_egg 
+ 1077  2015-09-03 09:44:10 nyf cd ..
+ 1078  2015-09-03 09:44:10 nyf ls 
+ 1079  2015-09-03 09:44:10 nyf sudo rm -rf gflux_egg
+ 1080  2015-09-03 09:44:10 nyf ls 
+ 1081  2015-09-03 09:44:10 nyf tar -xvf gflux_egg.tar 
+ 1082  2015-09-03 09:44:10 nyf ls 
+ 1083  2015-09-03 09:44:10 nyf cd gflux_egg/
+ 1084  2015-09-03 09:44:10 nyf sudo python setup.py bdist_egg 
+ 1085  2015-09-03 09:44:10 nyf unzip -l dist/gflux-0.1.0-py2.7.egg
+ 1086  2015-09-03 09:44:10 nyf ls 
+ 1087  2015-09-03 09:44:10 nyf cd gflux/
+ 1088  2015-09-03 09:44:10 nyf ls 
+ 1089  2015-09-03 09:44:10 nyf cd temp/
+ 1090  2015-09-03 09:44:10 nyf ls 
+ 1091  2015-09-03 09:44:10 nyf tar -cvf 1.tar * 
+ 1092  2015-09-03 09:44:10 nyf ls 
+ 1093  2015-09-03 09:44:10 nyf sudo mv 1.tar /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/
+ 1094  2015-09-03 09:44:10 nyf ls 
+ 1095  2015-09-03 09:44:10 nyf cd ..
+ 1096  2015-09-03 09:44:10 nyf sudo rm -rf temp/
+ 1097  2015-09-03 09:44:10 nyf ls 
+ 1098  2015-09-03 09:44:10 nyf cd ..
+ 1099  2015-09-03 09:44:10 nyf ls 
+ 1100  2015-09-03 09:44:10 nyf mkdir dash_egg 
+ 1101  2015-09-03 09:44:10 nyf cd dash_egg/
+ 1102  2015-09-03 09:44:10 nyf cp -r /home/nyf/develop/gflux/trunk/dash/ ./
+ 1103  2015-09-03 09:44:10 nyf ls 
+ 1104  2015-09-03 09:44:10 nyf cd dash/
+ 1105  2015-09-03 09:44:10 nyf ls 
+ 1106  2015-09-03 09:44:10 nyf mv * ../
+ 1107  2015-09-03 09:44:10 nyf mv -r * ../
+ 1108  2015-09-03 09:44:10 nyf cd ..
+ 1109  2015-09-03 09:44:10 nyf ls 
+ 1110  2015-09-03 09:44:10 nyf ls
+ 1111  2015-09-03 09:44:10 nyf vi build_egg.sh 
+ 1112  2015-09-03 09:44:10 nyf ls 
+ 1113  2015-09-03 09:44:10 nyf rm build_egg.sh 
+ 1114  2015-09-03 09:44:10 nyf rm -rf dist
+ 1115  2015-09-03 09:44:10 nyf ls 
+ 1116  2015-09-03 09:44:10 nyf cd dash/
+ 1117  2015-09-03 09:44:10 nyf ls 
+ 1118  2015-09-03 09:44:10 nyf cd ..
+ 1119  2015-09-03 09:44:10 nyf ls 
+ 1120  2015-09-03 09:44:10 nyf sudo python setup.py bdist_egg 
+ 1121  2015-09-03 09:44:10 nyf ls 
+ 1122  2015-09-03 09:44:10 nyf unzip -l dist/dash-3.14-py2.7.egg
+ 1123  2015-09-03 09:44:10 nyf ls 
+ 1124  2015-09-03 09:44:10 nyf rm -rf * 
+ 1125  2015-09-03 09:44:10 nyf sudo rm -rf * 
+ 1126  2015-09-03 09:44:10 nyf ls 
+ 1127  2015-09-03 09:44:10 nyf rm -rf build_egg.sh 
+ 1128  2015-09-03 09:44:10 nyf rm -rf  dist 
+ 1129  2015-09-03 09:44:10 nyf ls 
+ 1130  2015-09-03 09:44:10 nyf cd dash/
+ 1131  2015-09-03 09:44:10 nyf ls 
+ 1132  2015-09-03 09:44:10 nyf cd ..
+ 1133  2015-09-03 09:44:10 nyf ls 
+ 1134  2015-09-03 09:44:10 nyf vi MANIFEST.in 
+ 1135  2015-09-03 09:44:10 nyf python setup.py bdist_egg 
+ 1136  2015-09-03 09:44:10 nyf ls 
+ 1137  2015-09-03 09:44:10 nyf unzip -l dist/dash-3.14-py2.7.egg
+ 1138  2015-09-03 09:44:10 nyf ls 
+ 1139  2015-09-03 09:44:10 nyf sudo python setup.py install
+ 1140  2015-09-03 09:44:10 nyf unzip -l dist/dash-3.14-py2.7.egg
+ 1141  2015-09-03 09:44:10 nyf python setup.py bdist_egg 
+ 1142  2015-09-03 09:44:10 nyf cd ..
+ 1143  2015-09-03 09:44:10 nyf cd gflux_egg/
+ 1144  2015-09-03 09:44:10 nyf ls 
+ 1145  2015-09-03 09:44:10 nyf sudo rm -rf build 
+ 1146  2015-09-03 09:44:10 nyf sudo rm -rf dist
+ 1147  2015-09-03 09:44:10 nyf cd ..
+ 1148  2015-09-03 09:44:10 nyf ls 
+ 1149  2015-09-03 09:44:10 nyf rm -rf gflux_egg
+ 1150  2015-09-03 09:44:10 nyf sudo rm -rf gflux_egg
+ 1151  2015-09-03 09:44:10 nyf ls 
+ 1152  2015-09-03 09:44:10 nyf tar -xvf gflux_egg.tar 
+ 1153  2015-09-03 09:44:10 nyf ls 
+ 1154  2015-09-03 09:44:10 nyf cd gflux_egg/
+ 1155  2015-09-03 09:44:10 nyf ls 
+ 1156  2015-09-03 09:44:10 nyf cd ..
+ 1157  2015-09-03 09:44:10 nyf rm gflux_egg.tar 
+ 1158  2015-09-03 09:44:10 nyf tar -cvf gflux_egg.tar gflux_egg
+ 1159  2015-09-03 09:44:10 nyf ls 
+ 1160  2015-09-03 09:44:10 nyf cd gflux_egg/
+ 1161  2015-09-03 09:44:10 nyf ls 
+ 1162  2015-09-03 09:44:10 nyf python setup.py bdist_egg 
+ 1163  2015-09-03 09:44:10 nyf ls 
+ 1164  2015-09-03 09:44:10 nyf sudo python setup.py install 
+ 1165  2015-09-03 09:44:10 nyf ls 
+ 1166  2015-09-03 09:44:10 nyf cd ..
+ 1167  2015-09-03 09:44:10 nyf ls 
+ 1168  2015-09-03 09:44:10 nyf cd dash_egg/
+ 1169  2015-09-03 09:44:10 nyf ls 
+ 1170  2015-09-03 09:44:10 nyf cd dash.egg-info/
+ 1171  2015-09-03 09:44:10 nyf ls 
+ 1172  2015-09-03 09:44:10 nyf cd ..
+ 1173  2015-09-03 09:44:10 nyf ls 
+ 1174  2015-09-03 09:44:10 nyf cd dash 
+ 1175  2015-09-03 09:44:10 nyf ls 
+ 1176  2015-09-03 09:44:10 nyf cd ..
+ 1177  2015-09-03 09:44:10 nyf ls 
+ 1178  2015-09-03 09:44:10 nyf rm -rf build
+ 1179  2015-09-03 09:44:10 nyf rm -rf dist
+ 1180  2015-09-03 09:44:10 nyf rm -rf dash.egg-info
+ 1181  2015-09-03 09:44:10 nyf ls 
+ 1182  2015-09-03 09:44:10 nyf python setup.py bdist_egg 
+ 1183  2015-09-03 09:44:10 nyf ls 
+ 1184  2015-09-03 09:44:10 nyf cd dash
+ 1185  2015-09-03 09:44:10 nyf ls 
+ 1186  2015-09-03 09:44:10 nyf cd ..
+ 1187  2015-09-03 09:44:10 nyf ls 
+ 1188  2015-09-03 09:44:10 nyf sudo python setup.py install 
+ 1189  2015-09-03 09:44:10 nyf ls 
+ 1190  2015-09-03 09:44:10 nyf sudo rm -rf * 
+ 1191  2015-09-03 09:44:10 nyf ls 
+ 1192  2015-09-03 09:44:10 nyf cp -r /home/nyf/develop/gflux/trunk/dash/* ./
+ 1193  2015-09-03 09:44:10 nyf ls 
+ 1194  2015-09-03 09:44:10 nyf rm -rf dash 
+ 1195  2015-09-03 09:44:10 nyf ls 
+ 1196  2015-09-03 09:44:10 nyf ./build_egg.sh 
+ 1197  2015-09-03 09:44:10 nyf ls 
+ 1198  2015-09-03 09:44:10 nyf vi setup.py 
+ 1199  2015-09-03 09:44:10 nyf vi build_egg.sh 
+ 1200  2015-09-03 09:44:10 nyf rm -rf * 
+ 1201  2015-09-03 09:44:10 nyf cp -r /home/nyf/develop/gflux/trunk/dash/* ./
+ 1202  2015-09-03 09:44:10 nyf ls 
+ 1203  2015-09-03 09:44:10 nyf ./build_egg.sh 
+ 1204  2015-09-03 09:44:10 nyf ls 
+ 1205  2015-09-03 09:44:10 nyf cd dist/
+ 1206  2015-09-03 09:44:10 nyf ls 
+ 1207  2015-09-03 09:44:10 nyf unzip -l dash-3.14-py2.7.egg
+ 1208  2015-09-03 09:44:10 nyf ls 
+ 1209  2015-09-03 09:44:10 nyf cd ..
+ 1210  2015-09-03 09:44:10 nyf ls 
+ 1211  2015-09-03 09:44:10 nyf cd ..
+ 1212  2015-09-03 09:44:10 nyf cd deploy_egg/
+ 1213  2015-09-03 09:44:10 nyf ls 
+ 1214  2015-09-03 09:44:10 nyf chmod +x deployment.sh 
+ 1215  2015-09-03 09:44:10 nyf ls 
+ 1216  2015-09-03 09:44:10 nyf cd ..
+ 1217  2015-09-03 09:44:10 nyf ls 
+ 1218  2015-09-03 09:44:10 nyf tar -cvf deploy_egg.tar deploy_egg 
+ 1219  2015-09-03 09:44:10 nyf ls 
+ 1220  2015-09-03 09:44:10 nyf cd deploy_egg/
+ 1221  2015-09-03 09:44:10 nyf ls 
+ 1222  2015-09-03 09:44:10 nyf cd ..
+ 1223  2015-09-03 09:44:10 nyf ls 
+ 1224  2015-09-03 09:44:10 nyf rm deploy_egg.tar 
+ 1225  2015-09-03 09:44:10 nyf tar -cvf deploy_egg.tar deploy_egg
+ 1226  2015-09-03 09:44:10 nyf ls 
+ 1227  2015-09-03 09:44:10 nyf cd deploy_egg/
+ 1228  2015-09-03 09:44:10 nyf ls 
+ 1229  2015-09-03 09:44:10 nyf ./dash/build_egg.sh
+ 1230  2015-09-03 09:44:10 nyf ls 
+ 1231  2015-09-03 09:44:10 nyf cd dash/
+ 1232  2015-09-03 09:44:10 nyf ls 
+ 1233  2015-09-03 09:44:10 nyf cd ..
+ 1234  2015-09-03 09:44:10 nyf sudo python dash/setup.py install  
+ 1235  2015-09-03 09:44:10 nyf vi dash/setup.py 
+ 1236  2015-09-03 09:44:10 nyf ls 
+ 1237  2015-09-03 09:44:10 nyf cd ..
+ 1238  2015-09-03 09:44:10 nyf ls 
+ 1239  2015-09-03 09:44:10 nyf rm -rf deploy_egg
+ 1240  2015-09-03 09:44:10 nyf sudo rm -rf deploy_egg
+ 1241  2015-09-03 09:44:10 nyf ls 
+ 1242  2015-09-03 09:44:10 nyf tar -xvf deploy_egg.tar 
+ 1243  2015-09-03 09:44:10 nyf cd deploy_egg/
+ 1244  2015-09-03 09:44:10 nyf ls 
+ 1245  2015-09-03 09:44:10 nyf cd dash/
+ 1246  2015-09-03 09:44:10 nyf ls 
+ 1247  2015-09-03 09:44:10 nyf python setup.py install 
+ 1248  2015-09-03 09:44:10 nyf sudo python setup.py install 
+ 1249  2015-09-03 09:44:10 nyf ls 
+ 1250  2015-09-03 09:44:10 nyf cd ..
+ 1251  2015-09-03 09:44:10 nyf ls 
+ 1252  2015-09-03 09:44:10 nyf cd dash 
+ 1253  2015-09-03 09:44:10 nyf sudo python setup.py install 
+ 1254  2015-09-03 09:44:10 nyf cd ../
+ 1255  2015-09-03 09:44:10 nyf cp -r dash /usr/local/lib/python2.7/dist-packages/
+ 1256  2015-09-03 09:44:10 nyf sudo cp -r dash /usr/local/lib/python2.7/dist-packages/
+ 1257  2015-09-03 09:44:10 nyf ls 
+ 1258  2015-09-03 09:44:10 nyf python 
+ 1259  2015-09-03 09:44:10 nyf ls 
+ 1260  2015-09-03 09:44:10 nyf cd dash/
+ 1261  2015-09-03 09:44:10 nyf ls 
+ 1262  2015-09-03 09:44:10 nyf cd ..
+ 1263  2015-09-03 09:44:10 nyf ls 
+ 1264  2015-09-03 09:44:10 nyf sudo python setup.py install  
+ 1265  2015-09-03 09:44:10 nyf cd gflux
+ 1266  2015-09-03 09:44:10 nyf tar -cvf deployment.tar config lib live_auto_generate_static locale logs scripts tools collectstatic.sh collectstatic_manage.py crontab.conf dash debug_manage.py install.sh local_settings.py manage.py score_settings.py  
+ 1267  2015-09-03 09:44:10 nyf ls 
+ 1268  2015-09-03 09:44:10 nyf cd ../
+ 1269  2015-09-03 09:44:10 nyf sudo mv gflux/deployment.tar /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/
+ 1270  2015-09-03 09:44:10 nyf sudo tar -xvf  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/deployment.tar
+ 1271  2015-09-03 09:44:10 nyf sudo python setup.py install  
+ 1272  2015-09-03 09:44:10 nyf cd gflux
+ 1273  2015-09-03 09:44:10 nyf tar -cvf deployment.tar config lib live_auto_generate_static locale logs scripts tools collectstatic.sh collectstatic_manage.py crontab.conf dash debug_manage.py install.sh local_settings.py manage.py score_settings.py  
+ 1274  2015-09-03 09:44:10 nyf cd ../
+ 1275  2015-09-03 09:44:10 nyf sudo mv gflux/deployment.tar /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/
+ 1276  2015-09-03 09:44:10 nyf sudo tar -xvf  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/deployment.tar
+ 1277  2015-09-03 09:44:10 nyf sudo cp -r dash /usr/local/lib/python2.7/dist-packages/
+ 1278  2015-09-03 09:44:10 nyf sudo tar -xvf  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/deployment.tar
+ 1279  2015-09-03 09:44:10 nyf sudo rm /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/deployment.tar
+ 1280  2015-09-03 09:44:10 nyf python -c "import compileall; import re; compileall.compile_dir('/usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/', rx=re.compile(r'[/\\][.]svn'), force=True)"
+ 1281  2015-09-03 09:44:10 nyf sudo rm -rfv  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/*.py 
+ 1282  2015-09-03 09:44:10 nyf sudo rm -rfv  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/*/*.py 
+ 1283  2015-09-03 09:44:10 nyf sudo rm -rfv  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/*/*/*.py 
+ 1284  2015-09-03 09:44:10 nyf sudo rm -rfv  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/*/*/*/*.py 
+ 1285  2015-09-03 09:44:10 nyf sudo rm -rfv  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/*/*/*/*/*.py 
+ 1286  2015-09-03 09:44:10 nyf sudo rm -rfv  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/*/*/*/*/*/*.py
+ 1287  2015-09-03 09:44:10 nyf sudo rm -rfv  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/*/*/*/*/*/*/*.py
+ 1288  2015-09-03 09:44:10 nyf sudo cp gflux/manage.py /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/
+ 1289  2015-09-03 09:44:10 nyf ls 
+ 1290  2015-09-03 09:44:10 nyf cd gflux/
+ 1291  2015-09-03 09:44:10 nyf ls 
+ 1292  2015-09-03 09:44:10 nyf cd ..
+ 1293  2015-09-03 09:44:10 nyf cd gf
+ 1294  2015-09-03 09:44:10 nyf cd gflux/
+ 1295  2015-09-03 09:44:10 nyf tar -cvf deployment.tar config lib live_auto_generate_static locale logs scripts tools collectstatic.sh collectstatic_manage.py crontab.conf dash debug_manage.py install.sh local_settings.py manage.py score_settings.py  
+ 1296  2015-09-03 09:44:10 nyf ls 
+ 1297  2015-09-03 09:44:10 nyf tar -xvf deployment.tar  ./
+ 1298  2015-09-03 09:44:10 nyf ls 
+ 1299  2015-09-03 09:44:10 nyf tar -xvf deployment.tar /home/nyf/test/
+ 1300  2015-09-03 09:44:10 nyf ls 
+ 1301  2015-09-03 09:44:10 nyf rm deployment.tar 
+ 1302  2015-09-03 09:44:10 nyf tar -cvf deployment.tar config lib live_auto_generate_static locale logs scripts tools collectstatic.sh collectstatic_manage.py crontab.conf dash debug_manage.py install.sh local_settings.py manage.py score_settings.py  
+ 1303  2015-09-03 09:44:10 nyf ls 
+ 1304  2015-09-03 09:44:10 nyf tar -xvf deployment.tar /home/nyf/
+ 1305  2015-09-03 09:44:10 nyf mv deployment.tar /home/nyf/
+ 1306  2015-09-03 09:44:10 nyf ls 
+ 1307  2015-09-03 09:44:10 nyf cd ..
+ 1308  2015-09-03 09:44:10 nyf ls 
+ 1309  2015-09-03 09:44:10 nyf cd ..
+ 1310  2015-09-03 09:44:10 nyf ls 
+ 1311  2015-09-03 09:44:10 nyf rm deploy_egg.tar 
+ 1312  2015-09-03 09:44:10 nyf tar -cvf deploy_egg.tar deploy_egg 
+ 1313  2015-09-03 09:44:10 nyf ls 
+ 1314  2015-09-03 09:44:10 nyf cd deploy_egg/
+ 1315  2015-09-03 09:44:10 nyf ls 
+ 1316  2015-09-03 09:44:10 nyf rm  -rf build
+ 1317  2015-09-03 09:44:10 nyf sudo rm  -rf build
+ 1318  2015-09-03 09:44:10 nyf l s
+ 1319  2015-09-03 09:44:10 nyf ls 
+ 1320  2015-09-03 09:44:10 nyf sudo rm  -rf collectstatic_manage.py
+ 1321  2015-09-03 09:44:10 nyf sudo rm  -rf 
+ 1322  2015-09-03 09:44:10 nyf ls 
+ 1323  2015-09-03 09:44:10 nyf sduo rm -rf config
+ 1324  2015-09-03 09:44:10 nyf sudo  rm -rf config
+ 1325  2015-09-03 09:44:10 nyf sudo  rm -rf dist
+ 1326  2015-09-03 09:44:10 nyf sudo  rm -rf lib
+ 1327  2015-09-03 09:44:10 nyf sudo  rm -rf local_settings.py
+ 1328  2015-09-03 09:44:10 nyf sudo  rm -rf local_settings.py manage.py
+ 1329  2015-09-03 09:44:10 nyf sudo  rm -rf local_settings.py scripts
+ 1330  2015-09-03 09:44:10 nyf ls 
+ 1331  2015-09-03 09:44:10 nyf sudo  rm -rf local_settings.py crontab.conf
+ 1332  2015-09-03 09:44:10 nyf sudo  rm -rf local_settings.py debug_manage.py  install.sh locale
+ 1333  2015-09-03 09:44:10 nyf ls 
+ 1334  2015-09-03 09:44:10 nyf sudo  rm -rf local_settings.py live_auto_generate_static logs score_settings.py tools
+ 1335  2015-09-03 09:44:10 nyf ls 
+ 1336  2015-09-03 09:44:10 nyf cd ..
+ 1337  2015-09-03 09:44:10 nyf rm deploy_egg.tar 
+ 1338  2015-09-03 09:44:10 nyf tar -cvf deploy_egg.tar deploy_egg 
+ 1339  2015-09-03 09:44:10 nyf ls 
+ 1340  2015-09-03 09:44:10 nyf cd deploy_egg/
+ 1341  2015-09-03 09:44:10 nyf ls 
+ 1342  2015-09-03 09:44:10 nyf cd dash 
+ 1343  2015-09-03 09:44:10 nyf sudo python setup.py install 
+ 1344  2015-09-03 09:44:10 nyf cd ../
+ 1345  2015-09-03 09:44:10 nyf ls 
+ 1346  2015-09-03 09:44:10 nyf sudo cp -r dash /usr/local/lib/python2.7/dist-packages
+ 1347  2015-09-03 09:44:10 nyf ls 
+ 1348  2015-09-03 09:44:10 nyf sudo python setup.py install  
+ 1349  2015-09-03 09:44:10 nyf sudo rm -rf /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/dash 
+ 1350  2015-09-03 09:44:10 nyf cd gflux
+ 1351  2015-09-03 09:44:10 nyf tar -cvf deployment.tar config lib live_auto_generate_static locale logs scripts tools collectstatic.sh collectstatic_manage.py crontab.conf dash debug_manage.py install.sh local_settings.py manage.py score_settings.py  
+ 1352  2015-09-03 09:44:10 nyf cd ../
+ 1353  2015-09-03 09:44:10 nyf ls 
+ 1354  2015-09-03 09:44:10 nyf cd gflux/
+ 1355  2015-09-03 09:44:10 nyf ls 
+ 1356  2015-09-03 09:44:10 nyf cd ..
+ 1357  2015-09-03 09:44:10 nyf ls 
+ 1358  2015-09-03 09:44:10 nyf cd gflux/
+ 1359  2015-09-03 09:44:10 nyf ls 
+ 1360  2015-09-03 09:44:10 nyf cd gflux
+ 1361  2015-09-03 09:44:10 nyf tar -cvf deployment.tar config lib live_auto_generate_static locale logs scripts tools collectstatic.sh collectstatic_manage.py crontab.conf dash debug_manage.py install.sh local_settings.py manage.py score_settings.py  
+ 1362  2015-09-03 09:44:10 nyf cd ../
+ 1363  2015-09-03 09:44:10 nyf ls 
+ 1364  2015-09-03 09:44:10 nyf cd ..
+ 1365  2015-09-03 09:44:10 nyf cd gflux
+ 1366  2015-09-03 09:44:10 nyf tar -cvf deployment.tar config lib live_auto_generate_static locale logs scripts tools collectstatic.sh collectstatic_manage.py crontab.conf dash debug_manage.py install.sh local_settings.py manage.py score_settings.py  
+ 1367  2015-09-03 09:44:10 nyf cd ../
+ 1368  2015-09-03 09:44:10 nyf ls 
+ 1369  2015-09-03 09:44:10 nyf cd gflux/
+ 1370  2015-09-03 09:44:10 nyf ls 
+ 1371  2015-09-03 09:44:10 nyf cd ..
+ 1372  2015-09-03 09:44:10 nyf ls 
+ 1373  2015-09-03 09:44:10 nyf sudo mv gflux/deployment.tar /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/
+ 1374  2015-09-03 09:44:10 nyf sudo tar -xvf  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/deployment.tar  -C /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/
+ 1375  2015-09-03 09:44:10 nyf ls 
+ 1376  2015-09-03 09:44:10 nyf sudo rm /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/deployment.tar
+ 1377  2015-09-03 09:44:10 nyf python -c "import compileall; import re; compileall.compile_dir('/usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg', rx=re.compile(r'[/\\][.]svn'), force=True)"
+ 1378  2015-09-03 09:44:10 nyf sudo rm -rfv  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/*/*.py 
+ 1379  2015-09-03 09:44:10 nyf sudo rm -rfv  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/*/*/*.py 
+ 1380  2015-09-03 09:44:10 nyf sudo rm -rfv  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/*/*/*/*.py 
+ 1381  2015-09-03 09:44:10 nyf sudo rm -rfv  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/*/*/*/*/*.py 
+ 1382  2015-09-03 09:44:10 nyf sudo rm -rfv  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/*/*/*/*/*/*.py
+ 1383  2015-09-03 09:44:10 nyf sudo rm -rfv  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/*/*/*/*/*/*/*.py
+ 1384  2015-09-03 09:44:10 nyf #fsdfs
+ 1385  2015-09-03 09:44:10 nyf sudo cp gflux/gcustomer/server_rsa_private_key.pem /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/gcustomer/
+ 1386  2015-09-03 09:44:10 nyf sudo cp gflux/gcustomer/server_rsa_public_key.pem /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/gcustomer/
+ 1387  2015-09-03 09:44:10 nyf ls 
+ 1388  2015-09-03 09:44:10 nyf cd ..
+ 1389  2015-09-03 09:44:10 nyf ls 
+ 1390  2015-09-03 09:44:10 nyf rm gflux_egg.tar 
+ 1391  2015-09-03 09:44:10 nyf tar -cvf gflux_egg.tar deploy_egg 
+ 1392  2015-09-03 09:44:10 nyf ls 
+ 1393  2015-09-03 09:44:10 nyf ls 
+ 1394  2015-09-03 09:44:10 nyf cd gflux-0.1.0-py2.7.egg/
+ 1395  2015-09-03 09:44:10 nyf ls 
+ 1396  2015-09-03 09:44:10 nyf cd gflux/
+ 1397  2015-09-03 09:44:10 nyf python -c "import compileall; import re; compileall.compile_dir('./', rx=re.compile(r'[/\\][.]svn'), force=True)"
+ 1398  2015-09-03 09:44:10 nyf sudo python -c "import compileall; import re; compileall.compile_dir('./', rx=re.compile(r'[/\\][.]svn'), force=True)"
+ 1399  2015-09-03 09:44:10 nyf ls 
+ 1400  2015-09-03 09:44:10 nyf cd ..
+ 1401  2015-09-03 09:44:10 nyf sudo python -c "import compileall; import re; compileall.compile_dir('./', rx=re.compile(r'[/\\][.]svn'), force=True)"
+ 1402  2015-09-03 09:44:10 nyf ls 
+ 1403  2015-09-03 09:44:10 nyf vi install.sh 
+ 1404  2015-09-03 09:44:10 nyf ls 
+ 1405  2015-09-03 09:44:10 nyf sudo rm -rfv ./*.py 
+ 1406  2015-09-03 09:44:10 nyf sudo rm -rfv ./*/*.py 
+ 1407  2015-09-03 09:44:10 nyf sudo rm -rfv ./*/*/*.py 
+ 1408  2015-09-03 09:44:10 nyf sudo rm -rfv ./*/*/*/*.py 
+ 1409  2015-09-03 09:44:10 nyf sudo rm -rfv ./*/*/*/*/*.py 
+ 1410  2015-09-03 09:44:10 nyf sudo rm -rfv ./*/*/*/*/*/*.py 
+ 1411  2015-09-03 09:44:10 nyf sudo rm -rfv ./*/*/*/*/*/*/*.py 
+ 1412  2015-09-03 09:44:10 nyf sudo rm -rfv ./*/*/*/*/*/*/*/*.py 
+ 1413  2015-09-03 09:44:10 nyf ls 
+ 1414  2015-09-03 09:44:10 nyf sudo cp /home/nyf/develop/gflux/trunk/gflux/manage.py ./
+ 1415  2015-09-03 09:44:10 nyf ls 
+ 1416  2015-09-03 09:44:10 nyf python manage.py runserver 
+ 1417  2015-09-03 09:44:10 nyf ps -ef | grep python 
+ 1418  2015-09-03 09:44:10 nyf python manage.py runserver 
+ 1419  2015-09-03 09:44:10 nyf ls 
+ 1420  2015-09-03 09:44:10 nyf tree 
+ 1421  2015-09-03 09:44:10 nyf cd gflux/
+ 1422  2015-09-03 09:44:10 nyf tree 
+ 1423  2015-09-03 09:44:10 nyf cd apps/
+ 1424  2015-09-03 09:44:10 nyf ls 
+ 1425  2015-09-03 09:44:10 nyf tree 
+ 1426  2015-09-03 09:44:10 nyf cd .. 
+ 1427  2015-09-03 09:44:10 nyf cd ..
+ 1428  2015-09-03 09:44:10 nyf pwd
+ 1429  2015-09-03 09:44:10 nyf cd gflux/
+ 1430  2015-09-03 09:44:10 nyf pwd
+ 1431  2015-09-03 09:44:10 nyf ls 
+ 1432  2015-09-03 09:44:10 nyf cd ..
+ 1433  2015-09-03 09:44:10 nyf ls 
+ 1434  2015-09-03 09:44:10 nyf cd ..
+ 1435  2015-09-03 09:44:10 nyf vi easy-install.pth 
+ 1436  2015-09-03 09:44:10 nyf ls 
+ 1437  2015-09-03 09:44:10 nyf cd gflux-0.1.0-py2.7.egg/
+ 1438  2015-09-03 09:44:10 nyf ls 
+ 1439  2015-09-03 09:44:10 nyf ls -la dash
+ 1440  2015-09-03 09:44:10 nyf cd ..
+ 1441  2015-09-03 09:44:10 nyf ls 
+ 1442  2015-09-03 09:44:10 nyf cd gflux-0.1.0-py2.7.egg/
+ 1443  2015-09-03 09:44:10 nyf ls 
+ 1444  2015-09-03 09:44:10 nyf cd ..
+ 1445  2015-09-03 09:44:10 nyf ls 
+ 1446  2015-09-03 09:44:10 nyf sudo rm dash-3.14-py2.7.egg 
+ 1447  2015-09-03 09:44:10 nyf sudo rm -rf dash
+ 1448  2015-09-03 09:44:10 nyf vi easy-install.pth 
+ 1449  2015-09-03 09:44:10 nyf sudo vi easy-install.pth 
+ 1450  2015-09-03 09:44:10 nyf ls 
+ 1451  2015-09-03 09:44:10 nyf python 
+ 1452  2015-09-03 09:44:10 nyf ls 
+ 1453  2015-09-03 09:44:10 nyf cd dash-3.14-py2.7.egg/
+ 1454  2015-09-03 09:44:10 nyf ls 
+ 1455  2015-09-03 09:44:10 nyf cd gflux/
+ 1456  2015-09-03 09:44:10 nyf ls 
+ 1457  2015-09-03 09:44:10 nyf cd ..
+ 1458  2015-09-03 09:44:10 nyf sudo rm -rf dash-3.14-py2.7.egg/
+ 1459  2015-09-03 09:44:10 nyf sudo vi easy-install.pth 
+ 1460  2015-09-03 09:44:10 nyf ls 
+ 1461  2015-09-03 09:44:10 nyf sudo vi easy-install.pth 
+ 1462  2015-09-03 09:44:10 nyf ls 
+ 1463  2015-09-03 09:44:10 nyf sudo rm dash-3.14-py2.7.egg 
+ 1464  2015-09-03 09:44:10 nyf ls 
+ 1465  2015-09-03 09:44:10 nyf cd dash 
+ 1466  2015-09-03 09:44:10 nyf sudo python setup.py install 
+ 1467  2015-09-03 09:44:10 nyf cd ../
+ 1468  2015-09-03 09:44:10 nyf cd dist-packages/
+ 1469  2015-09-03 09:44:10 nyf ls 
+ 1470  2015-09-03 09:44:10 nyf sudo vi easy-install.pth 
+ 1471  2015-09-03 09:44:10 nyf sudo rm -rf gflux-0.1.0-py2.7.egg 
+ 1472  2015-09-03 09:44:10 nyf ls 
+ 1473  2015-09-03 09:44:10 nyf cd gflux-0.1.0-py2.7.egg/
+ 1474  2015-09-03 09:44:10 nyf ls 
+ 1475  2015-09-03 09:44:10 nyf cd ..
+ 1476  2015-09-03 09:44:10 nyf ls 
+ 1477  2015-09-03 09:44:10 nyf cd gflux-0.1.0-py2.7.egg/
+ 1478  2015-09-03 09:44:10 nyf ls 
+ 1479  2015-09-03 09:44:10 nyf sudo rm -rf dash 
+ 1480  2015-09-03 09:44:10 nyf ls 
+ 1481  2015-09-03 09:44:10 nyf sudo tar -xvf deployment.tar 
+ 1482  2015-09-03 09:44:10 nyf ls 
+ 1483  2015-09-03 09:44:10 nyf cd gflux/
+ 1484  2015-09-03 09:44:10 nyf tree 
+ 1485  2015-09-03 09:44:10 nyf cd apps/station/
+ 1486  2015-09-03 09:44:10 nyf tree 
+ 1487  2015-09-03 09:44:10 nyf cd ..
+ 1488  2015-09-03 09:44:10 nyf ls 
+ 1489  2015-09-03 09:44:10 nyf cd ..
+ 1490  2015-09-03 09:44:10 nyf ls 
+ 1491  2015-09-03 09:44:10 nyf python manage.py runserver 
+ 1492  2015-09-03 09:44:10 nyf ls 
+ 1493  2015-09-03 09:44:10 nyf cd gflux/
+ 1494  2015-09-03 09:44:10 nyf ls 
+ 1495  2015-09-03 09:44:10 nyf cd ..
+ 1496  2015-09-03 09:44:10 nyf ls 
+ 1497  2015-09-03 09:44:10 nyf cd ..
+ 1498  2015-09-03 09:44:10 nyf ls 
+ 1499  2015-09-03 09:44:10 nyf sudo vi easy-install.pth 
+ 1500  2015-09-03 09:44:10 nyf ls 
+ 1501  2015-09-03 09:44:10 nyf sudo rm -rf dash
+ 1502  2015-09-03 09:44:10 nyf sudo rm -rf gflux-0.1.0-py2.7.egg
+ 1503  2015-09-03 09:44:10 nyf ls 
+ 1504  2015-09-03 09:44:10 nyf sudo rm dash-3.14-py2.7.egg 
+ 1505  2015-09-03 09:44:10 nyf ls 
+ 1506  2015-09-03 09:44:10 nyf python 
+ 1507  2015-09-03 09:44:10 nyf ls 
+ 1508  2015-09-03 09:44:10 nyf cd gflux-0.1.0-py2.7.egg/
+ 1509  2015-09-03 09:44:10 nyf ls 
+ 1510  2015-09-03 09:44:10 nyf cd gflux/
+ 1511  2015-09-03 09:44:10 nyf cd apps/station/
+ 1512  2015-09-03 09:44:10 nyf ls 
+ 1513  2015-09-03 09:44:10 nyf cd ..
+ 1514  2015-09-03 09:44:10 nyf ls 
+ 1515  2015-09-03 09:44:10 nyf cd ..
+ 1516  2015-09-03 09:44:10 nyf ls 
+ 1517  2015-09-03 09:44:10 nyf cd ..
+ 1518  2015-09-03 09:44:10 nyf ls 
+ 1519  2015-09-03 09:44:10 nyf python -c "import compileall; import re; compileall.compile_dir('./', rx=re.compile(r'[/\\][.]svn'), force=True)"
+ 1520  2015-09-03 09:44:10 nyf ls 
+ 1521  2015-09-03 09:44:10 nyf cd gflux/apps/
+ 1522  2015-09-03 09:44:10 nyf tree 
+ 1523  2015-09-03 09:44:10 nyf ls 
+ 1524  2015-09-03 09:44:10 nyf cd ..
+ 1525  2015-09-03 09:44:10 nyf tree 
+ 1526  2015-09-03 09:44:10 nyf ls -la gflux/apps/station/
+ 1527  2015-09-03 09:44:10 nyf ls -la gflux/apps/common/
+ 1528  2015-09-03 09:44:10 nyf ls 
+ 1529  2015-09-03 09:44:10 nyf python manage.py runserver 
+ 1530  2015-09-03 09:44:10 nyf ls 
+ 1531  2015-09-03 09:44:10 nyf cd gcustomer/
+ 1532  2015-09-03 09:44:10 nyf ls 
+ 1533  2015-09-03 09:44:10 nyf cd ..
+ 1534  2015-09-03 09:44:10 nyf python manage.py runserver 
+ 1535  2015-09-03 09:44:10 nyf ls 
+ 1536  2015-09-03 09:44:10 nyf cd dash/
+ 1537  2015-09-03 09:44:10 nyf ls 
+ 1538  2015-09-03 09:44:10 nyf cd core/
+ 1539  2015-09-03 09:44:10 nyf ls 
+ 1540  2015-09-03 09:44:10 nyf cd /home/nyf/develop/gflux/trunk/gflux/
+ 1541  2015-09-03 09:44:10 nyf ls 
+ 1542  2015-09-03 09:44:10 nyf tree dash
+ 1543  2015-09-03 09:44:10 nyf ls 
+ 1544  2015-09-03 09:44:10 nyf sudo cp -r dash /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/ 
+ 1545  2015-09-03 09:44:10 nyf cd /home 
+ 1546  2015-09-03 09:44:10 nyf cd 
+ 1547  2015-09-03 09:44:10 nyf ls 
+ 1548  2015-09-03 09:44:10 nyf mkdir test
+ 1549  2015-09-03 09:44:10 nyf cp -r develop/gflux/trunk/gflux test/
+ 1550  2015-09-03 09:44:10 nyf cd test/
+ 1551  2015-09-03 09:44:10 nyf ls 
+ 1552  2015-09-03 09:44:10 nyf cd gflux/
+ 1553  2015-09-03 09:44:10 nyf ls 
+ 1554  2015-09-03 09:44:10 nyf tar -cvf deployment.tar ./scripts config debug_manage.py manage.py debug_local_settings.py local_settings.py manage.py crontab.conf local logs tools 
+ 1555  2015-09-03 09:44:10 nyf tar -cvf deployment.tar ./scripts config debug_manage.py manage.py debug_local_settings.py local_settings.py manage.py crontab.conf locale logs tools 
+ 1556  2015-09-03 09:44:10 nyf ls 
+ 1557  2015-09-03 09:44:10 nyf cd /home/nyf
+ 1558  2015-09-03 09:44:10 nyf ls 
+ 1559  2015-09-03 09:44:10 nyf cd document/eggs_package/
+ 1560  2015-09-03 09:44:10 nyf ls 
+ 1561  2015-09-03 09:44:10 nyf mkdir deploy_egg
+ 1562  2015-09-03 09:44:10 nyf cd deploy_egg/
+ 1563  2015-09-03 09:44:10 nyf cp -r  /home/nyf/develop/gflux/trunk/gflux ./
+ 1564  2015-09-03 09:44:10 nyf ls 
+ 1565  2015-09-03 09:44:10 nyf cd gflux/
+ 1566  2015-09-03 09:44:10 nyf ls 
+ 1567  2015-09-03 09:44:10 nyf cd ..
+ 1568  2015-09-03 09:44:10 nyf cd gflux/
+ 1569  2015-09-03 09:44:10 nyf ls 
+ 1570  2015-09-03 09:44:10 nyf cd 
+ 1571  2015-09-03 09:44:10 nyf cd 下载
+ 1572  2015-09-03 09:44:10 nyf 类似
+ 1573  2015-09-03 09:44:10 nyf ls 
+ 1574  2015-09-03 09:44:10 nyf tar -xvf pycrypto-2.6.1.tar.gz 
+ 1575  2015-09-03 09:44:10 nyf cd pycrypto-2.6.1/
+ 1576  2015-09-03 09:44:10 nyf ls 
+ 1577  2015-09-03 09:44:10 nyf ./configure 
+ 1578  2015-09-03 09:44:10 nyf make
+ 1579  2015-09-03 09:44:10 nyf ls 
+ 1580  2015-09-03 09:44:10 nyf python setup.py  install 
+ 1581  2015-09-03 09:44:10 nyf sudo python setup.py  install 
+ 1582  2015-09-03 09:44:10 nyf cd 
+ 1583  2015-09-03 09:44:10 nyf cd 下载
+ 1584  2015-09-03 09:44:10 nyf ls 
+ 1585  2015-09-03 09:44:10 nyf cd /usr/local/lib/python2.7/dist-packages/
+ 1586  2015-09-03 09:44:10 nyf ls 
+ 1587  2015-09-03 09:44:10 nyf python 
+ 1588  2015-09-03 09:44:10 nyf ls 
+ 1589  2015-09-03 09:44:10 nyf cd software/
+ 1590  2015-09-03 09:44:10 nyf ls 
+ 1591  2015-09-03 09:44:10 nyf cd /usr/local/lib/python2.7/dist-packages/
+ 1592  2015-09-03 09:44:10 nyf ls 
+ 1593  2015-09-03 09:44:10 nyf cd gflux-0.1.0-py2.7.egg/
+ 1594  2015-09-03 09:44:10 nyf ls 
+ 1595  2015-09-03 09:44:10 nyf cp manage.py /usr/local/bin/
+ 1596  2015-09-03 09:44:10 nyf sudo cp manage.py /usr/local/bin/
+ 1597  2015-09-03 09:44:10 nyf cd 
+ 1598  2015-09-03 09:44:10 nyf ls 
+ 1599  2015-09-03 09:44:10 nyf python manage.py runserver 
+ 1600  2015-09-03 09:44:10 nyf cd /usr/local/lib/python2.7/site-packages/
+ 1601  2015-09-03 09:44:10 nyf ls 
+ 1602  2015-09-03 09:44:10 nyf cd ..
+ 1603  2015-09-03 09:44:10 nyf cd dist-packages/
+ 1604  2015-09-03 09:44:10 nyf ls 
+ 1605  2015-09-03 09:44:10 nyf cd gflux-0.1.0-py2.7.egg/
+ 1606  2015-09-03 09:44:10 nyf ls 
+ 1607  2015-09-03 09:44:10 nyf python manage.py runserver 
+ 1608  2015-09-03 09:44:10 nyf ls 
+ 1609  2015-09-03 09:44:10 nyf sudo rm /usr/local/bin/manage.py 
+ 1610  2015-09-03 09:44:10 nyf ls 
+ 1611  2015-09-03 09:44:10 nyf nohup python manage.py runserver 
+ 1612  2015-09-03 09:44:10 nyf nohup python manage.py runserver  & 
+ 1613  2015-09-03 09:44:10 nyf ps -ef | grep python 
+ 1614  2015-09-03 09:44:10 nyf cd develop/gflux/trunk/gflux/
+ 1615  2015-09-03 09:44:10 nyf ls 
+ 1616  2015-09-03 09:44:10 nyf cd ..
+ 1617  2015-09-03 09:44:10 nyf svn st 
+ 1618  2015-09-03 09:44:10 nyf svn diff dash/dash/core/static/js/render.js
+ 1619  2015-09-03 09:44:10 nyf cd gflux/
+ 1620  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1621  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1622  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1623  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1624  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1625  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1626  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1627  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1628  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1629  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1630  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1631  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1632  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1633  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1634  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1635  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1636  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1637  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1638  2015-09-03 09:44:10 nyf python manage.py 
+ 1639  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1640  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1641  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1642  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1643  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1644  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1645  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1646  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1647  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1648  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1649  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1650  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1651  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1652  2015-09-03 09:44:10 nyf svn diff 
+ 1653  2015-09-03 09:44:10 nyf svn st 
+ 1654  2015-09-03 09:44:10 nyf cd ..
+ 1655  2015-09-03 09:44:10 nyf svn st 
+ 1656  2015-09-03 09:44:10 nyf svn diff dash/dash/core/static/js/render.js
+ 1657  2015-09-03 09:44:10 nyf svn ci -m '' dash/dash/core/static/js/render.js
+ 1658  2015-09-03 09:44:10 nyf svn up dash/dash/core/static/js/render.js
+ 1659  2015-09-03 09:44:10 nyf svn ci -m '' dash/dash/core/static/js/render.js
+ 1660  2015-09-03 09:44:10 nyf cd gflux/
+ 1661  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1662  2015-09-03 09:44:10 nyf cd gflux/
+ 1663  2015-09-03 09:44:10 nyf cd ..
+ 1664  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1665  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1666  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1667  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1668  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1669  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1670  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1671  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1672  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1673  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1674  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1675  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1676  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1677  2015-09-03 09:44:10 nyf ./scripts/collectstatic_manage.sh 
+ 1678  2015-09-03 09:44:10 nyf python manage.py runserver 8085
+ 1679  2015-09-03 09:44:10 nyf cd develop/gflux/trunk/gflux/
+ 1680  2015-09-03 09:44:10 nyf python manage.py runserver 
+ 1681  2015-09-03 09:44:10 nyf ls 
+ 1682  2015-09-03 09:44:10 nyf cd /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/
+ 1683  2015-09-03 09:44:10 nyf pwd
+ 1684  2015-09-03 09:44:10 nyf ls 
+ 1685  2015-09-03 09:44:10 nyf free 
+ 1686  2015-09-03 09:44:10 nyf kill -9 9923
+ 1687  2015-09-03 09:44:10 nyf kill -9 9926
+ 1688  2015-09-03 09:44:10 nyf cd  /usr/local/lib/python2.7/dist-packages/
+ 1689  2015-09-03 09:44:10 nyf ls 
+ 1690  2015-09-03 09:44:10 nyf cd gflux-0.1.0-py2.7.egg/
+ 1691  2015-09-03 09:44:10 nyf ls 
+ 1692  2015-09-03 09:44:10 nyf python manage.py 
+ 1693  2015-09-03 09:44:10 nyf cd /home/nyf/develop/gflux/trunk/docs/
+ 1694  2015-09-03 09:44:10 nyf svn st 
+ 1695  2015-09-03 09:44:10 nyf svn add gcustomer设计文档.odt
+ 1696  2015-09-03 09:44:10 nyf svn add gcustomer部署文档
+ 1697  2015-09-03 09:44:10 nyf svn add gflux-gcustomer系统安装整套流程
+ 1698  2015-09-03 09:44:10 nyf svn ci -m '' .
+ 1699  2015-09-03 09:44:10 nyf svn st 
+ 1700  2015-09-03 09:44:10 nyf svn ci -m  '' . 
+ 1701  2015-09-03 09:44:10 nyf svn st 
+ 1702  2015-09-03 09:44:10 nyf cd ..
+ 1703  2015-09-03 09:44:10 nyf svn st 
+ 1704  2015-09-03 09:44:10 nyf svn diff dash/dash/core/static/js/render.js
+ 1705  2015-09-03 09:44:10 nyf svn st 
+ 1706  2015-09-03 09:44:10 nyf ls 
+ 1707  2015-09-03 09:44:10 nyf svn st 
+ 1708  2015-09-03 09:44:10 nyf svn ci -m '' dash/dash/core/static/js/render.js
+ 1709  2015-09-03 09:44:10 nyf ls 
+ 1710  2015-09-03 09:44:10 nyf cd docs/
+ 1711  2015-09-03 09:44:10 nyf ls 
+ 1712  2015-09-03 09:44:10 nyf svn st 
+ 1713  2015-09-03 09:44:10 nyf svn ci -m '' gflux-gcustomer系统安装整套流程
+ 1714  2015-09-03 09:44:10 nyf svn add centos6.6环境安装文档
+ 1715  2015-09-03 09:44:10 nyf svn ci -m '' centos6.6环境安装文档
+ 1716  2015-09-03 09:44:10 nyf svn st 
+ 1717  2015-09-03 09:44:10 nyf ssh work@gflux3.tmlsystem.com
+ 1718  2015-09-03 09:44:10 nyf psql -U nyf -d new_gflux
+ 1719  2015-09-03 09:44:10 nyf cd 
+ 1720  2015-09-03 09:44:10 nyf sudo apt-get install umbrello
+ 1721  2015-09-03 09:44:10 nyf ls 
+ 1722  2015-09-03 09:44:10 nyf umbrello
+ 1723  2015-09-03 09:44:10 nyf cd 
+ 1724  2015-09-03 09:44:10 nyf ls 
+ 1725  2015-09-03 09:44:10 nyf vi start_gflux
+ 1726  2015-09-03 09:44:10 nyf ls 
+ 1727  2015-09-03 09:44:10 nyf chmod +x start_gflux 
+ 1728  2015-09-03 09:44:10 nyf ls 
+ 1729  2015-09-03 09:44:10 nyf ./start_gflux 
+ 1730  2015-09-03 09:44:10 nyf vi start_gflux 
+ 1731  2015-09-03 09:44:10 nyf ./start_gflux 
+ 1732  2015-09-03 09:44:10 nyf ls 
+ 1733  2015-09-03 09:44:10 nyf ./start_gflux 
+ 1734  2015-09-03 09:44:10 nyf cd /usr/local/lib/python2.7/dist-packages/
+ 1735  2015-09-03 09:44:10 nyf ls 
+ 1736  2015-09-03 09:44:10 nyf sudo vi easy-install.pth 
+ 1737  2015-09-03 09:44:10 nyf ls 
+ 1738  2015-09-03 09:44:10 nyf sudo rm -rf dash 
+ 1739  2015-09-03 09:44:10 nyf sudo rm -rf gflux-0.1.0-py2.7.egg 
+ 1740  2015-09-03 09:44:10 nyf sudo rm dash-3.14-py2.7.egg 
+ 1741  2015-09-03 09:44:10 nyf ls 
+ 1742  2015-09-03 09:44:10 nyf ls 
+ 1743  2015-09-03 09:44:10 nyf cd document/
+ 1744  2015-09-03 09:44:10 nyf ls 
+ 1745  2015-09-03 09:44:10 nyf mkdir picture_document
+ 1746  2015-09-03 09:44:10 nyf cd 
+ 1747  2015-09-03 09:44:10 nyf ./start_gflux 
+ 1748  2015-09-03 09:44:10 nyf ;s 
+ 1749  2015-09-03 09:44:10 nyf ls 
+ 1750  2015-09-03 09:44:10 nyf cd deployment/
+ 1751  2015-09-03 09:44:10 nyf ls 
+ 1752  2015-09-03 09:44:10 nyf cd ..
+ 1753  2015-09-03 09:44:10 nyf cd 
+ 1754  2015-09-03 09:44:10 nyf ls 
+ 1755  2015-09-03 09:44:10 nyf tar -xvf  deploy_egg.tar 
+ 1756  2015-09-03 09:44:10 nyf ls 
+ 1757  2015-09-03 09:44:10 nyf cd deploy_egg/
+ 1758  2015-09-03 09:44:10 nyf ls 
+ 1759  2015-09-03 09:44:10 nyf cd gflux/
+ 1760  2015-09-03 09:44:10 nyf ls 
+ 1761  2015-09-03 09:44:10 nyf vi local_settings.py
+ 1762  2015-09-03 09:44:10 nyf ls 
+ 1763  2015-09-03 09:44:10 nyf cd ..
+ 1764  2015-09-03 09:44:10 nyf ./deployment.sh 
+ 1765  2015-09-03 09:44:10 nyf cd ..
+ 1766  2015-09-03 09:44:10 nyf ls 
+ 1767  2015-09-03 09:44:10 nyf cd deploy_egg/
+ 1768  2015-09-03 09:44:10 nyf ls 
+ 1769  2015-09-03 09:44:10 nyf cp deployment.sh  deployment_dist.sh 
+ 1770  2015-09-03 09:44:10 nyf mv deployment.sh deployment_site.sh
+ 1771  2015-09-03 09:44:10 nyf ls 
+ 1772  2015-09-03 09:44:10 nyf vi deployment_dist.sh 
+ 1773  2015-09-03 09:44:10 nyf echo "Finish"
+ 1774  2015-09-03 09:44:10 nyf ./deployment_dist.sh 
+ 1775  2015-09-03 09:44:10 nyf cd /usr/local/lib/python2.7/dist-packages/
+ 1776  2015-09-03 09:44:10 nyf ls 
+ 1777  2015-09-03 09:44:10 nyf cd 
+ 1778  2015-09-03 09:44:10 nyf ./start_gflux 
+ 1779  2015-09-03 09:44:10 nyf ./software/Sublime\ Text\ 2/sublime_text 
+ 1780  2015-09-03 09:44:10 nyf ls 
+ 1781  2015-09-03 09:44:10 nyf vi deploy_egg/deployment_site.sh 
+ 1782  2015-09-03 09:44:10 nyf 类似
+ 1783  2015-09-03 09:44:10 nyf sudo psql -U nyf -d new_gflux
+ 1784  2015-09-03 09:44:10 nyf psql -U nyf -d new_gflux
+ 1785  2015-09-03 09:44:10 nyf cd 
+ 1786  2015-09-03 09:44:10 nyf psql -U nyf -d new_gflux
+ 1787  2015-09-03 09:44:10 nyf pg_dump -U nyf new_gflux -t gcustomer_dim_chinaprovincecitydistrict > /home/nyf/develop/db_backup/gcustomer_dim_chinaprovincecitydistrict.sql 
+ 1788  2015-09-03 09:44:10 nyf ls 
+ 1789  2015-09-03 09:44:10 nyf psql -U nyf -d new_gflux
+ 1790  2015-09-03 09:44:10 nyf psql -U nyf -d gflux
+ 1791  2015-09-03 09:44:10 nyf pg_dump -U nyf new_gflux -t dim_chinaprovincecitydistrict > /home/nyf/develop/db_backup/dim_chinaprovincecitydistrict.sql 
+ 1792  2015-09-03 09:44:10 nyf psql -U nyf -d gflux
+ 1793  2015-09-03 09:44:10 nyf psql -U tao -d gflux
+ 1794  2015-09-03 09:44:10 nyf sudo -u postgres psql 
+ 1795  2015-09-03 09:44:10 nyf pg_dump -U tao gflux -t dim_chinaprovincecitydistrict > /home/nyf/develop/db_backup/dim_chinaprovincecitydistrict.sql 
+ 1796  2015-09-03 09:44:10 nyf psql -U nyf -d new_glfux  
+ 1797  2015-09-03 09:44:10 nyf psql -U nyf -d new_gflux  
+ 1798  2015-09-03 09:44:10 nyf pg_dump -U nyf new_gflux -t dim_chinaprovincecitydistrict > /home/nyf/develop/db_backup/dim_chinaprovincecitydistrict.sql 
+ 1799  2015-09-03 09:44:10 nyf cd 
+ 1800  2015-09-03 09:44:10 nyf ./start_gflux 
+ 1801  2015-09-03 09:44:10 nyf ls 
+ 1802  2015-09-03 09:44:10 nyf cd deploy_egg/
+ 1803  2015-09-03 09:44:10 nyf ls 
+ 1804  2015-09-03 09:44:10 nyf ./deployment_dist.sh 
+ 1805  2015-09-03 09:44:10 nyf vi gflux/local_settings.py
+ 1806  2015-09-03 09:44:10 nyf ./deployment_dist.sh 
+ 1807  2015-09-03 09:44:10 nyf vi deployment_dist.sh 
+ 1808  2015-09-03 09:44:10 nyf ./deployment_dist.sh 
+ 1809  2015-09-03 09:44:10 nyf sudo cp  -r  gflux/gflux/apps/station/management/*  /usr/local/lib/python2.7/dist-packages/gflux-0.1.0-py2.7.egg/gflux/apps/station/management/
+ 1810  2015-09-03 09:44:10 nyf ls 
+ 1811  2015-09-03 09:44:10 nyf vi gflux/local_settings.py
+ 1812  2015-09-03 09:44:10 nyf ./deployment_dist.sh 
+ 1813  2015-09-03 09:44:10 nyf ls 
+ 1814  2015-09-03 09:44:10 nyf cd ..
+ 1815  2015-09-03 09:44:10 nyf ls 
+ 1816  2015-09-03 09:44:10 nyf rm deploy_egg.tar 
+ 1817  2015-09-03 09:44:10 nyf tar -cvf deploy_egg.tar deploy_egg 
+ 1818  2015-09-03 09:44:10 nyf ls 
+ 1819  2015-09-03 09:44:10 nyf sudo -u postgres psql 
+ 1820  2015-09-03 09:44:10 nyf psql -u tao -d gflux
+ 1821  2015-09-03 09:44:10 nyf psql -U tao -d gflux
+ 1822  2015-09-03 09:44:10 nyf sudo vi /etc/postgresql/9.3/main/pg_hba.conf 
+ 1823  2015-09-03 09:44:10 nyf sudo /etc/init.d/postgresql reload
+ 1824  2015-09-03 09:44:10 nyf psql -U tao -d gflux 
+ 1825  2015-09-03 09:44:10 nyf cd
+ 1826  2015-09-03 09:44:10 nyf ls 
+ 1827  2015-09-03 09:44:10 nyf mkdir link
+ 1828  2015-09-03 09:44:10 nyf cd link
+ 1829  2015-09-03 09:44:10 nyf ls 
+ 1830  2015-09-03 09:44:10 nyf mkidr link1
+ 1831  2015-09-03 09:44:10 nyf mkdir link1
+ 1832  2015-09-03 09:44:10 nyf cd ..
+ 1833  2015-09-03 09:44:10 nyf ls 
+ 1834  2015-09-03 09:44:10 nyf mkdir link2
+ 1835  2015-09-03 09:44:10 nyf rm link2
+ 1836  2015-09-03 09:44:10 nyf rm -rf  link2
+ 1837  2015-09-03 09:44:10 nyf ls 
+ 1838  2015-09-03 09:44:10 nyf mkdir link1
+ 1839  2015-09-03 09:44:10 nyf cd link1
+ 1840  2015-09-03 09:44:10 nyf ls 
+ 1841  2015-09-03 09:44:10 nyf mkdir link2
+ 1842  2015-09-03 09:44:10 nyf cd ..
+ 1843  2015-09-03 09:44:10 nyf ls 
+ 1844  2015-09-03 09:44:10 nyf cd link
+ 1845  2015-09-03 09:44:10 nyf ls 
+ 1846  2015-09-03 09:44:10 nyf ln -s link1 ../link1 
+ 1847  2015-09-03 09:44:10 nyf ls 
+ 1848  2015-09-03 09:44:10 nyf ls -la 
+ 1849  2015-09-03 09:44:10 nyf cd ../link1
+ 1850  2015-09-03 09:44:10 nyf ls 
+ 1851  2015-09-03 09:44:10 nyf cd ..
+ 1852  2015-09-03 09:44:10 nyf ls 
+ 1853  2015-09-03 09:44:10 nyf tree link
+ 1854  2015-09-03 09:44:10 nyf cd link1
+ 1855  2015-09-03 09:44:10 nyf ls 
+ 1856  2015-09-03 09:44:10 nyf cd ../
+ 1857  2015-09-03 09:44:10 nyf ls 
+ 1858  2015-09-03 09:44:10 nyf cd link1
+ 1859  2015-09-03 09:44:10 nyf cd ..
+ 1860  2015-09-03 09:44:10 nyf cd develop/gflux/
+ 1861  2015-09-03 09:44:10 nyf ls 
+ 1862  2015-09-03 09:44:10 nyf cd trunk/gflux/
+ 1863  2015-09-03 09:44:10 nyf ls 
+ 1864  2015-09-03 09:44:10 nyf ls -la dash
+ 1865  2015-09-03 09:44:10 nyf man ln 
+ 1866  2015-09-03 09:44:10 nyf ls 
+ 1867  2015-09-03 09:44:10 nyf ssh work@10.180.1.51
+ 1868  2015-09-03 09:44:10 nyf cd 
+ 1869  2015-09-03 09:44:10 nyf ssh work@10.180.1.53
+ 1870  2015-09-03 09:44:10 nyf ping 10.180.1.53
+ 1871  2015-09-03 09:44:10 nyf ping 10.180.1.51
+ 1872  2015-09-03 09:44:10 nyf ping 10.180.1.53
+ 1873  2015-09-03 09:44:10 nyf ping 10.180.1.51
+ 1874  2015-09-03 09:44:10 nyf ssh work@10.180.1.53
+ 1875  2015-09-03 09:44:10 nyf cd /usr/local/lib/python2.7/dist-packages/
+ 1876  2015-09-03 09:44:10 nyf ls 
+ 1877  2015-09-03 09:44:10 nyf cd gflux-0.1.0-py2.7.egg/
+ 1878  2015-09-03 09:44:10 nyf ls 
+ 1879  2015-09-03 09:44:10 nyf pwd
+ 1880  2015-09-03 09:44:10 nyf ls 
+ 1881  2015-09-03 09:44:10 nyf cd gflux/
+ 1882  2015-09-03 09:44:10 nyf ls 
+ 1883  2015-09-03 09:44:10 nyf cd ..
+ 1884  2015-09-03 09:44:10 nyf ls 
+ 1885  2015-09-03 09:44:10 nyf cd ..
+ 1886  2015-09-03 09:44:10 nyf ls 
+ 1887  2015-09-03 09:44:10 nyf cd ../../../
+ 1888  2015-09-03 09:44:10 nyf ls 
+ 1889  2015-09-03 09:44:10 nyf cd lib/
+ 1890  2015-09-03 09:44:10 nyf ls 
+ 1891  2015-09-03 09:44:10 nyf sudo tar -cvf python2.7.tar python2.7
+ 1892  2015-09-03 09:44:10 nyf ls 
+ 1893  2015-09-03 09:44:10 nyf scp python2.7.tar 10.180.1.53:/home/work/
+ 1894  2015-09-03 09:44:10 nyf scp python2.7.tar work@10.180.1.53:/home/work/
+ 1895  2015-09-03 09:44:10 nyf ls 
+ 1896  2015-09-03 09:44:10 nyf sudo rm python2.7.tar 
+ 1897  2015-09-03 09:44:10 nyf ls 
+ 1898  2015-09-03 09:44:10 nyf cd python2.7
+ 1899  2015-09-03 09:44:10 nyf ls 
+ 1900  2015-09-03 09:44:10 nyf cd ..
+ 1901  2015-09-03 09:44:10 nyf ls 
+ 1902  2015-09-03 09:44:10 nyf cd ..
+ 1903  2015-09-03 09:44:10 nyf ls 
+ 1904  2015-09-03 09:44:10 nyf cd 
+ 1905  2015-09-03 09:44:10 nyf free
+ 1906  2015-09-03 09:44:10 nyf ls 
+ 1907  2015-09-03 09:44:10 nyf VMware-Workstation-Full-10.0.4-2249910.i386.bundle
+ 1908  2015-09-03 09:44:10 nyf sudo chmod +x VMware-Workstation-Full-10.0.4-2249910.i386.bundle
+ 1909  2015-09-03 09:44:10 nyf ls 
+ 1910  2015-09-03 09:44:10 nyf ./VMware-Workstation-Full-10.0.4-2249910.i386.bundle 
+ 1911  2015-09-03 09:44:10 nyf sudo ./VMware-Workstation-Full-10.0.4-2249910.i386.bundle 
+ 1912  2015-09-03 09:44:10 nyf ls 
+ 1913  2015-09-03 09:44:10 nyf ./script/start_editor 
+ 1914  2015-09-03 09:44:10 nyf mount
+ 1915  2015-09-03 09:44:10 nyf cd 
+ 1916  2015-09-03 09:44:10 nyf mount CD
+ 1917  2015-09-03 09:44:10 nyf sudo mount -t auto /dev/cdrom /mnt/cdrom
+ 1918  2015-09-03 09:44:10 nyf cd /mnt/
+ 1919  2015-09-03 09:44:10 nyf ls 
+ 1920  2015-09-03 09:44:10 nyf mkdir cdrom 
+ 1921  2015-09-03 09:44:10 nyf sudo cd rom 
+ 1922  2015-09-03 09:44:10 nyf sudo mkdir cdrom 
+ 1923  2015-09-03 09:44:10 nyf cd
+ 1924  2015-09-03 09:44:10 nyf sudo mount -t auto /dev/cdrom /mnt/cdrom
+ 1925  2015-09-03 09:44:10 nyf cd /mnt/cdrom/
+ 1926  2015-09-03 09:44:10 nyf ls 
+ 1927  2015-09-03 09:44:10 nyf cd Packages/
+ 1928  2015-09-03 09:44:10 nyf ls 
+ 1929  2015-09-03 09:44:10 nyf ls | grep "gcc"
+ 1930  2015-09-03 09:44:10 nyf sudo  rpm -ivh ppl-0.10.2-11.el6.i686.rpm
+ 1931  2015-09-03 09:44:10 nyf sudo  rpm -ivh ppl-0.10.2-11.el6.x86_64.rpm 
+ 1932  2015-09-03 09:44:10 nyf sudo  rpm -ivh 
+ 1933  2015-09-03 09:44:10 nyf sudo  alien -ivh kerne
+ 1934  2015-09-03 09:44:10 nyf sudo  rpm -ivh gcc-4.4.7-16.el6.x86_64.rpm 
+ 1935  2015-09-03 09:44:10 nyf rpm -ivh glibc-devel-2.12-1.166.el6.x86_64.rpm 
+ 1936  2015-09-03 09:44:10 nyf ls 
+ 1937  2015-09-03 09:44:10 nyf gcc
+ 1938  2015-09-03 09:44:10 nyf cd 
+ 1939  2015-09-03 09:44:10 nyf ls 
+ 1940  2015-09-03 09:44:10 nyf cd gcc/
+ 1941  2015-09-03 09:44:10 nyf ls 
+ 1942  2015-09-03 09:44:10 nyf wget ftp://gcc.gnu.org/pub/gcc/releases/gcc-4.8.2/gcc-4.8.2.tar.bz2
+ 1943  2015-09-03 09:44:10 nyf cd /usr/local/lib/python2.7/dist-packages/
+ 1944  2015-09-03 09:44:10 nyf ls 
+ 1945  2015-09-03 09:44:10 nyf cd ..
+ 1946  2015-09-03 09:44:10 nyf ls 
+ 1947  2015-09-03 09:44:10 nyf cd dist-packages/
+ 1948  2015-09-03 09:44:10 nyf ls 
+ 1949  2015-09-03 09:44:10 nyf ssh work@10.180.1.54
+ 1950  2015-09-03 09:44:10 nyf ssh work@10.180.1.55
+ 1951  2015-09-03 09:44:10 nyf ssh work@10.180.1.52
+ 1952  2015-09-03 09:44:10 nyf psql -U tao -d new_gflux 
+ 1953  2015-09-03 09:44:10 nyf ssh work@10.180.1.55
+ 1954  2015-09-03 09:44:10 nyf ssh work@10.180.1.54
+ 1955  2015-09-03 09:44:10 nyf ssh work@10.180.1.55
+ 1956  2015-09-03 09:44:10 nyf ssh work@10.180.1.52
+ 1957  2015-09-03 09:44:10 nyf ssh work@10.180.1.54
+ 1958  2015-09-03 09:44:10 nyf ls 
+ 1959  2015-09-03 09:44:10 nyf cd 
+ 1960  2015-09-03 09:44:10 nyf ls 
+ 1961  2015-09-03 09:44:10 nyf cd software/
+ 1962  2015-09-03 09:44:10 nyf ls 
+ 1963  2015-09-03 09:44:10 nyf cd ..
+ 1964  2015-09-03 09:44:10 nyf ls 
+ 1965  2015-09-03 09:44:10 nyf mv VMware-Workstation-Full-10.0.4-2249910.i386.bundle software/
+ 1966  2015-09-03 09:44:10 nyf ls 
+ 1967  2015-09-03 09:44:10 nyf mv CentOS-6.7-x86_64-bin-DVD1.iso software/
+ 1968  2015-09-03 09:44:10 nyf ls 
+ 1969  2015-09-03 09:44:10 nyf rm software.tar.gz 
+ 1970  2015-09-03 09:44:10 nyf ls 
+ 1971  2015-09-03 09:44:10 nyf mkdir rpm
+ 1972  2015-09-03 09:44:10 nyf cd rpm/
+ 1973  2015-09-03 09:44:10 nyf ls 
+ 1974  2015-09-03 09:44:10 nyf scp work@10.180.1.55:/home/work/software.tar ../
+ 1975  2015-09-03 09:44:10 nyf ls 
+ 1976  2015-09-03 09:44:10 nyf ssh work@10.180.1.52
+ 1977  2015-09-03 09:44:10 nyf cd 
+ 1978  2015-09-03 09:44:10 nyf ls 
+ 1979  2015-09-03 09:44:10 nyf file software.tar 
+ 1980  2015-09-03 09:44:10 nyf size software.tar 
+ 1981  2015-09-03 09:44:10 nyf rm software.tar 
+ 1982  2015-09-03 09:44:10 nyf scp work@10.180.1.55:/home/work/software.tar ./
+ 1983  2015-09-03 09:44:10 nyf ls 
+ 1984  2015-09-03 09:44:10 nyf rm software.tar 
+ 1985  2015-09-03 09:44:10 nyf cd software/
+ 1986  2015-09-03 09:44:10 nyf ls 
+ 1987  2015-09-03 09:44:10 nyf cd ..
+ 1988  2015-09-03 09:44:10 nyf scp work@10.180.1.55:/home/work/software.tar ./
+ 1989  2015-09-03 09:44:10 nyf ls 
+ 1990  2015-09-03 09:44:10 nyf ssh work@10.180.1.555
+ 1991  2015-09-03 09:44:10 nyf ssh work@10.180.1.55
+ 1992  2015-09-03 09:44:10 nyf ls 
+ 1993  2015-09-03 09:44:10 nyf mv software.tar 55_software.tar
+ 1994  2015-09-03 09:44:10 nyf ls 
+ 1995  2015-09-03 09:44:10 nyf ls 
+ 1996  2015-09-03 09:44:10 nyf cd develop/gflux/trunk/gflux/
+ 1997  2015-09-03 09:44:10 nyf ls 
+ 1998  2015-09-03 09:44:10 nyf python manage.py runserver 
+ 1999  2015-09-03 09:44:10 nyf ./script/start_editor 
+ 2000  2015-09-03 09:44:14 nyf top 
+ 2001  2015-09-03 09:44:44 nyf free
+ 2002  2015-09-03 09:48:59 nyf top
+ 2003  2015-09-03 09:50:55 nyf q
+ 2004  2015-09-03 09:50:59 nyf free -m 
+ 2005  2015-09-03 09:51:09 nyf free -g
+ 2006  2015-09-03 09:51:16 nyf free -m 
+ 2007  2015-09-03 09:51:32 nyf free -k
+ 2008  2015-09-03 09:51:41 nyf free -b
+ 2009  2015-09-03 09:51:44 nyf free -m 
+ 2010  2015-09-03 10:00:11 nyf sudo apt-get install mysql-server 
+ 2011  2015-09-03 15:22:06 nyf dpkg -L | grep mysql 
+ 2012  2015-09-03 15:22:16 nyf dpkg -L mysql 
+ 2013  2015-09-03 15:22:36 nyf dpkg mysql -L  
+ 2014  2015-09-03 15:22:59 nyf dpkg  -L  mysql 
+ 2015  2015-09-03 15:24:02 nyf history
+ 2016  2015-09-03 15:24:35 nyf dpkg  -L  python 
+ 2017  2015-09-03 15:24:41 nyf dpkg  -L  mysql 
+ 2018  2015-09-03 15:24:49 nyf dpkg  -info mysql 
+ 2019  2015-09-03 15:25:00 nyf dpkg  --info mysql 
+ 2020  2015-09-03 15:26:59 nyf dpkg  -l mysql 
+ 2021  2015-09-03 15:27:13 nyf dpkg  -l mysql-service
+ 2022  2015-09-03 15:27:17 nyf dpkg  -L mysql-service
+ 2023  2015-09-03 15:29:56 nyf history
+ 2024  2015-09-03 15:31:33 nyf export HISTTIMEFORMAT="%F %T `whoami` "
+ 2025  2015-09-03 15:31:42 nyf history  |  tail
+ 2026  2015-09-03 15:32:03 nyf history  > history.backup 

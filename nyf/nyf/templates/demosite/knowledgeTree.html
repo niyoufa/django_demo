@@ -7,12 +7,76 @@
 			border-width:1px;
 			text-align:center;
 		}	
+		.emal-tab{
+			/*border:solid 1px;*/
+			margin-bottom:5px;
+			padding:10px;
+			background-color:white;
+			border-radius: 5px;
+		}
+		.email-list{
+			margin-top:15px;
+		}
 	</style>
 {% endblock %}
 {% block knowledge_block %}
-	<li role="presentation" ><a href="/demosite/knowledgeTree">知识结构树</a></li>
+	<li role="presentation" ><a href="/demosite/knowledgeTree">系统日志</a></li>
 {% endblock %} 
 {% block content_block %}
-	<div  style="margin-top:60px;padding:20px 500px 10px 300px;">
-	<div>
+	<div  style="margin-top:60px;padding:20px">
+		
+		<div class="left" style="width:600px;float:left;">
+			<div class="work_summary_body" style="padding:10px;">
+				<label>日志内容 :</label><br>
+				<textarea rows="10" cols="60" style="padding:20px;border-color:aliceblue;"></textarea><br>
+				<input type="button" value="提交" style="margin-top:20px;margin-left:5px;"/>
+			</div>
+		</div>
+
+		<div class="right" style="width:300px;height:500px;float:left;margin-left:100px;overflow-y:auto;">
+			<div class="email-list">
+				<div class="emal-tab">
+					<label>2015-11-5</label>
+					<p>修改文章上传bug</p>
+				</div>
+
+				<div class="emal-tab">
+					<label>2015-11-6</label>
+					<p>增加系统日志功能</p>
+				</div>
+
+				<div class="emal-tab">
+					<label>2015-11-6</label>
+					<p>增加系统日志功能</p>
+				</div>
+
+				<div class="emal-tab">
+					<label>2015-11-6</label>
+					<p>增加系统日志功能</p>
+				</div>
+
+				<div class="emal-tab">
+					<label>2015-11-6</label>
+					<p>增加系统日志功能</p>
+				</div>
+
+				<div class="emal-tab">
+					<label>2015-11-6</label>
+					<p>增加系统日志功能</p>
+				</div>
+
+				<div class="emal-tab">
+					<label>2015-11-6</label>
+					<p>增加系统日志功能</p>
+				</div>
+
+				<div class="emal-tab">
+					<label>2015-11-6</label>
+					<p>增加系统日志功能</p>
+				</div>
+
+			</div>
+		</div>
+		
+	</div>
 {% endblock %}
