@@ -37,7 +37,7 @@ def logincheck(request):
     
 #加载首页 
 def indexload(request):
-        link_list=Links.objects.all()
+        link_list=Links.objects.order_by("-time").all()
         return render_to_response('%sdemosite_admin.html'%DEMOSITE,{'link_list':link_list})
 
 #注册页面
