@@ -34,9 +34,11 @@ class uploadFileForm(forms.Form):
 class Links(models.Model):
 	title=models.CharField(max_length=255)
 	url=models.CharField(max_length=255)
-	time=models.DateField(auto_now=True)
+	time=models.DateTimeField()
 	def __unicode__(self):
 		return self.title
+	class Meta : 
+		unique_together = ( ( "url" ,) )
             
 class Image(models.Model):
 	name=models.CharField(max_length=255)

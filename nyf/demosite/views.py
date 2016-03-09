@@ -3,7 +3,7 @@ from django.shortcuts import render,render_to_response
 from django.http import HttpResponse
 from django import forms
 from demosite.models import *
-import pdb,sys
+import pdb,sys,datetime
 from django.template import Template,RequestContext
 from django.template.loader import get_template
 import json
@@ -159,7 +159,7 @@ def add_link(request):
 		if len(link_list):
 			rsdic={'message':"存在同名链接,上传失败"}
 		else :
-			Links.objects.create(title=temp_title,url=temp_url)
+			Links.objects.create(title=temp_title,url=temp_url,time=str(datetime.datetime.now()))
 			rsdic={'message':"上传成功"}
 	return HttpResponse(json.dumps(rsdic))
 		
@@ -174,15 +174,19 @@ def request_link_data(request):
 
 #插入博客链接
 def insert_link_url(request):
-	rsdic={'ret':1,'message':'success'}
-	try:
-		blog_name=request.POST['blog_name']
-		blog_url=request.POST['blog_url']
-		link=Links(title=blog_name,url=blog_url)
-		link.save()
-	except Exception , e :
-		rsdic={'ret':0,'message':'error'}
-	return  HttpResponse(json.dumps(rsdic))	
+        rsdic={'ret':1,'message':'success'}
+        try:
+                blog_name=request.POST['blog_name']
+                blog_url=request.POST['blog_url']
+                link = Links.objects.filter(url=blog_url).first()
+                if link : 
+                        rsdic = {'ret':0,'message':'已上传'}
+                else : 
+                        link=Links(title=blog_name,url=blog_url,time=str(datetime.datetime.now()))
+                        link.save()
+        except Exception , e :
+                rsdic={'ret':0,'message':'error'}
+        return  HttpResponse(json.dumps(rsdic))	
 
 
 #search_articles
@@ -202,7 +206,7 @@ def search_articles(request,order):
 
 def search_blog(request):
     search_str = request.GET['search_str']
-    link_list=Links.objects.all()
+    link_list=Links.objects.order_by("-time").all()
     if search_str == "" :
         return render_to_response('%sdemosite_admin.html'%DEMOSITE,{'link_list':link_list})
     else :
