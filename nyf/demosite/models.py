@@ -1,6 +1,7 @@
 from django.db import models
 from django import forms
 import datetime
+import pdb
 
 class customer(models.Model):
 	name=models.CharField(max_length=30)
@@ -49,4 +50,4 @@ class Image(models.Model):
 class Ques(models.Model):
 	question=models.TextField()
 	answer=models.TextField()
-	date=models.DateField()  
+	date=models.DateField()

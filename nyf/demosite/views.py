@@ -96,6 +96,7 @@ def show_file(request):
 
 #加载上传文件页面
 def uploadFilePage(request):
+        pdb.set_trace()
         images = File.objects.filter(file_type=1).all()
         for image in images :
             image.filesrc = "/static/images/"+image.title
